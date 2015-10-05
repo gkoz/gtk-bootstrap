@@ -26,6 +26,7 @@ build() {
 	./configure --prefix="$PREFIX"
 	make
 	make install
+	cd "$WD"
 }
 
 for LIB in `cat "$MANIFEST"`; do

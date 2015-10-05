@@ -1,7 +1,9 @@
 addons:
   apt:
     packages:
+    - libegl1-mesa-dev
     - libfreetype6-dev
     - libpng-dev
+    - xutils-dev
 script:
   - ./bootstrap.sh manifest.txt
