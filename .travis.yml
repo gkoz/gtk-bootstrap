@@ -1,0 +1,7 @@
+addons:
+  apt:
+    packages:
+    - libjpeg-dev
+    - libtiff-dev
+script:
+  - ./bootstrap.sh manifest.txt

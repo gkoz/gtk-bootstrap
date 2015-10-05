@@ -1,0 +1,2 @@
+https://download.gnome.org/sources/glib/2.46/glib-2.46.0.tar.xz
+https://download.gnome.org/sources/gdk-pixbuf/2.32/gdk-pixbuf-2.32.1.tar.xz
