@@ -9,8 +9,8 @@ WD="$PWD"
 BUILD="$WD/build"
 PREFIX="$WD/local"
 
-#export CPPFLAGS="-I$PREFIX/include"
-#export LDFLAGS="-I$PREFIX/lib"
+export CPPFLAGS="-I$PREFIX/include"
+export LDFLAGS="-I$PREFIX/lib"
 export LD_LIBRARY_PATH="$PREFIX/lib"
 export PKG_CONFIG_PATH="$PREFIX/lib/pkgconfig"
 
@@ -29,6 +29,10 @@ build() {
 }
 
 for LIB in `cat "$MANIFEST"`; do
-	echo Building "$LIB"...
+	echo
+	echo '*************************************************************************************'
+	echo "* Building $LIB"
+	echo '*************************************************************************************'
+	echo
 	build "$LIB"
 done

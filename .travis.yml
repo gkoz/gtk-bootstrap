@@ -1,7 +1,7 @@
 addons:
   apt:
     packages:
-    - libjpeg-dev
-    - libtiff-dev
+    - libfreetype6-dev
+    - libpng-dev
 script:
   - ./bootstrap.sh manifest.txt
