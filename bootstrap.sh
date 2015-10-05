@@ -10,8 +10,9 @@ BUILD="$WD/build"
 PREFIX="$WD/local"
 
 export CPPFLAGS="-I$PREFIX/include"
-export LDFLAGS="-I$PREFIX/lib"
 export LD_LIBRARY_PATH="$PREFIX/lib"
+export LDFLAGS="-I$PREFIX/lib"
+export PATH="$PREFIX/bin:$PATH"
 export PKG_CONFIG_PATH="$PREFIX/lib/pkgconfig"
 
 mkdir -p "$PREFIX"

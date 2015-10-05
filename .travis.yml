@@ -4,6 +4,8 @@ addons:
     - libegl1-mesa-dev
     - libfreetype6-dev
     - libpng-dev
+    - libxml-parser-perl
+    - libxtst-dev
     - xutils-dev
 script:
   - ./bootstrap.sh manifest.txt
