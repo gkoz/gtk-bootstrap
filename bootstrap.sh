@@ -7,7 +7,7 @@ MANIFEST="$1"
 
 WD="$PWD"
 BUILD="$WD/build"
-PREFIX="$WD/local"
+PREFIX="$HOME/local"
 
 export CPPFLAGS="-I$PREFIX/include"
 export LD_LIBRARY_PATH="$PREFIX/lib"
@@ -38,3 +38,6 @@ for LIB in `cat "$MANIFEST"`; do
 	echo
 	build "$LIB"
 done
+
+cd "$PREFIX/.."
+tar cJf "$WD/deps.txz" local

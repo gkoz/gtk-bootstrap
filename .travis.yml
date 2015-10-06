@@ -9,7 +9,6 @@ addons:
     - xutils-dev
 script:
 - ./bootstrap.sh manifest.txt
-- tar cJf deps.txz local
 deploy:
   provider: releases
   api_key:
