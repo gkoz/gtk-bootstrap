@@ -25,7 +25,7 @@ build() {
 	tar -xf dist.x --strip-components=1
 	rm dist.x
 	./configure --prefix="$PREFIX"
-	make
+	make -j2
 	make install
 	cd "$WD"
 }
