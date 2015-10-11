@@ -27,10 +27,13 @@ build() {
 	curl -L "$1" > dist.x
 	tar -xf dist.x --strip-components=1
 	rm dist.x
+	CFG_ARGS=`echo "$1" | awk ' \
+		/dlfcn-win32/ { print "--enable-shared" } \
+	'`
 	if [ -x configure ]; then
-		./configure --prefix="$PREFIX"
+		./configure --prefix="$PREFIX" $CFG_ARGS
 	else
-		./autogen.sh --prefix="$PREFIX"
+		./autogen.sh --prefix="$PREFIX" $CFG_ARGS
 	fi
 	make -j2
 	make install
