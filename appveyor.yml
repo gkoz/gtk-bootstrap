@@ -1,0 +1,17 @@
+platform:
+  - x86
+  - x64
+matrix:
+  fast_finish: true
+
+#init:
+#- ps: iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+
+install:
+
+build_script:
+  - cmd: SET MSYSTEM=MINGW32
+  - cmd: c:\msys64\usr\bin\sh -lc "cd '%APPVEYOR_BUILD_FOLDER%'; HOME=/c/projects ./bootstrap.sh manifest.txt"
+
+#on_finish:
+#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))

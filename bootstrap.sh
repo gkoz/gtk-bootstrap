@@ -2,6 +2,9 @@
 
 set -e
 set -u
+set -x
+
+exec 0< /dev/null
 
 MANIFEST="$1"
 
@@ -11,7 +14,7 @@ PREFIX="$HOME/local"
 
 export CPPFLAGS="-I$PREFIX/include"
 export LD_LIBRARY_PATH="$PREFIX/lib"
-export LDFLAGS="-I$PREFIX/lib"
+export LDFLAGS="-L$PREFIX/lib"
 export PATH="$PREFIX/bin:$PATH"
 export PKG_CONFIG_PATH="$PREFIX/lib/pkgconfig"
 
@@ -30,7 +33,7 @@ build() {
 	cd "$WD"
 }
 
-for LIB in `cat "$MANIFEST"`; do
+for LIB in `cat "$WD/$MANIFEST"`; do
 	echo
 	echo '*************************************************************************************'
 	echo "* Building $LIB"

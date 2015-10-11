@@ -1,3 +1,5 @@
+https://github.com/dlfcn-win32/dlfcn-win32/archive/v1.0.0.tar.gz
+http://sourceforge.net/projects/expat/files/expat/2.1.0/expat-2.1.0.tar.gz/download
 http://dbus.freedesktop.org/releases/dbus/dbus-1.10.0.tar.gz
 https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 https://github.com/anholt/libepoxy/releases/download/v1.3.1/libepoxy-1.3.1.tar.bz2
@@ -5,8 +7,6 @@ http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.94.tar.bz
 http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.0.4.tar.bz2
 https://download.gnome.org/sources/glib/2.46/glib-2.46.0.tar.xz
 https://download.gnome.org/sources/atk/2.18/atk-2.18.0.tar.xz
-https://download.gnome.org/sources/at-spi2-core/2.18/at-spi2-core-2.18.0.tar.xz
-https://download.gnome.org/sources/at-spi2-atk/2.18/at-spi2-atk-2.18.0.tar.xz
 http://www.cairographics.org/releases/cairo-1.14.2.tar.xz
 https://download.gnome.org/sources/pango/1.38/pango-1.38.0.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.32/gdk-pixbuf-2.32.1.tar.xz
