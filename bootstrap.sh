@@ -27,7 +27,11 @@ build() {
 	curl -L "$1" > dist.x
 	tar -xf dist.x --strip-components=1
 	rm dist.x
-	./configure --prefix="$PREFIX"
+	if [ -x configure ]; then
+		./configure --prefix="$PREFIX"
+	else
+		./autogen.sh --prefix="$PREFIX"
+	fi
 	make -j2
 	make install
 	cd "$WD"
