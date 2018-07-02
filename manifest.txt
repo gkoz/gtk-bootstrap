@@ -3,11 +3,11 @@ https://launchpad.net/intltool/trunk/0.51.0/+download/intltool-0.51.0.tar.gz
 https://github.com/anholt/libepoxy/releases/download/v1.3.1/libepoxy-1.3.1.tar.bz2
 http://www.freedesktop.org/software/fontconfig/release/fontconfig-2.11.94.tar.bz2
 http://www.freedesktop.org/software/harfbuzz/release/harfbuzz-1.0.4.tar.bz2
-https://download.gnome.org/sources/glib/2.46/glib-2.46.0.tar.xz
+https://download.gnome.org/sources/glib/2.55/glib-2.55.2.tar.xz
 https://download.gnome.org/sources/atk/2.18/atk-2.18.0.tar.xz
 https://download.gnome.org/sources/at-spi2-core/2.18/at-spi2-core-2.18.0.tar.xz
 https://download.gnome.org/sources/at-spi2-atk/2.18/at-spi2-atk-2.18.0.tar.xz
 http://www.cairographics.org/releases/cairo-1.14.2.tar.xz
-https://download.gnome.org/sources/pango/1.38/pango-1.38.0.tar.xz
+https://download.gnome.org/sources/pango/1.40/pango-1.40.5.tar.xz
 https://download.gnome.org/sources/gdk-pixbuf/2.32/gdk-pixbuf-2.32.1.tar.xz
-https://download.gnome.org/sources/gtk+/3.18/gtk+-3.18.1.tar.xz
+https://download.gnome.org/sources/gtk+/3.22/gtk+-3.22.30.tar.xz
